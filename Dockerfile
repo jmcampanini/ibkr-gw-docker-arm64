@@ -16,10 +16,10 @@ RUN \
     cd $GATEWAY_PATH && \
     wget -O clientportal.zip https://download2.interactivebrokers.com/portal/clientportal.gw.zip && \
     unzip clientportal.zip && \
-    rm -rf clientportal.gw.zip
+    rm -rf clientportal.zip
 
 ADD config/conf.yaml $GATEWAY_PATH/root/conf.yaml
-ADD config/logback.xml $GATEWAY_PATH/root/logback.yaml
+ADD config/logback.xml $GATEWAY_PATH/root/logback.xml
 ADD config/run.sh $GATEWAY_PATH/bin/run.sh
 
 EXPOSE 5000/tcp

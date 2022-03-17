@@ -1,8 +1,8 @@
 run: build
-	docker run -it -p 5000:5000 ibkr-gateway
+	docker run -it -p 5000:5000 ibkr-gateway:latest
 
 clean:
-	docker image rm ibkr-gateway
+	docker image rm ibkr-gateway:latest
 
 build:
-	docker build --tag ibkr-gateway .
+	docker build --tag ibkr-gateway:latest .
