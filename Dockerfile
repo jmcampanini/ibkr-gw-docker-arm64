@@ -25,4 +25,4 @@ ADD config/run.sh $GATEWAY_PATH/bin/run.sh
 EXPOSE 5000/tcp
 
 WORKDIR $GATEWAY_PATH
-CMD ["bin/run.sh", "root/conf.yaml"]
+ENTRYPOINT ["bin/run.sh", "root/conf.yaml"]
