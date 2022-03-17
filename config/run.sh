@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Set in the Dockerfile
+# export PATH=/usr/local/jdk1.8_x64/bin:$PATH
+# export JAVA_HOME=/usr/local/jdk1.8_x64/bin
+
 if [ $# -lt 1 ]; then
     >&2 echo "usage: $0 /path/to/conf.yaml"
     exit 1

@@ -27,22 +27,22 @@
     </appender>
 
     <logger name="HttpMessageLogger" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT" /> <!-- added -->
         <appender-ref ref="MESSAGELOG" />
     </logger>
 
     <logger name="ibgroup.web.core.clientportal.gw.core.CookieManager" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT" /> <!-- added -->
         <appender-ref ref="FILE" />
     </logger>
 
     <logger name="io.netty" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT" /> <!-- added -->
         <appender-ref ref="FILE" />
     </logger>
 
     <root level="DEBUG">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT" /> <!-- added -->
         <appender-ref ref="FILE" />
     </root>
 

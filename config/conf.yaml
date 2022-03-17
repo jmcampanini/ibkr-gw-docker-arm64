@@ -25,6 +25,7 @@ ips:
     - 192.*
     - 131.216.*
     - 127.0.0.1
+    # add to make docker friendly
     - 172.17.*
   deny:
     - 212.90.324.10
